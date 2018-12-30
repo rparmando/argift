@@ -6,35 +6,71 @@
  	<a-scene embedded arjs='debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
         
         <a-assets>
-            <a-asset-item id="cassette" src="/argift/3Dfiles/Darth Cassette Google.obj"></a-asset-item>
-            <a-asset-item id="cassettem" src="/argift/3Dfiles/Darth Cassette Google.mtl"></a-asset-item>
-            <a-asset-item id="gift" src="/argift/3Dfiles/GiftBox.dae"></a-asset-item>
-            <a-asset-item id="frame" src="/argift/3Dfiles/PicFrame.obj"></a-asset-item>
-            <a-asset-item id="framem" src="/argift/3Dfiles/PicFrame.mtl"></a-asset-item>
+
             <a-asset-item id="gift2" src="/argift/3Dfiles/new.obj"></a-asset-item>
             <a-asset-item id="gift2m" src="/argift/3Dfiles/new.mtl"></a-asset-item>
-
+            <a-asset-item id="piggy" src="/argift/3Dfiles/piggy bank.obj"></a-asset-item>
+            <a-asset-item id="piggym" src="/argift/3Dfiles/piggy bank.mtl"></a-asset-item>
+            <a-asset-item id="cassette2" src="/argift/3Dfiles/model.obj"></a-asset-item>
+            <a-asset-item id="cassette2" src="/argift/3Dfiles/materials.mtl"></a-asset-item>
+            <a-asset-item id="book" src="/argift/3Dfiles/book.obj"></a-asset-item>
+            <a-asset-item id="bookm" src="/argift/3Dfiles/materials2.mtl"></a-asset-item>
+            <a-asset-item id="frame2" src="/argift/3Dfiles/frame.obj"></a-asset-item>
+            <a-asset-item id="frame2m" src="/argift/3Dfiles/materials3.mtl"></a-asset-item>
+            <a-asset-item id="gameboy" src="/argift/3Dfiles/GameBoy_01.obj"></a-asset-item>
+            <a-asset-item id="gameboym" src="/argift/3Dfiles/GameBoy_01.mtl"></a-asset-item>
+            <a-asset-item id="cd" src="/argift/3Dfiles/CDs.obj"></a-asset-item>
+            <a-asset-item id="cdm" src="/argift/3Dfiles/CDs.mtl"></a-asset-item>
         </a-assets>
         
-        <a-marker type='barcode' value='0'>
-            <a-obj-model src="#cassette" mtl="#cassettem">
-            </a-obj-model>
-        </a-marker>
-        
+
         <a-marker type='barcode' value='1'>
             <a-entity collada-model="#gift"></a-entity>
         </a-marker>
         
-    	<a-marker type='barcode' value='2'>
-            <a-obj-model src="#frame" mtl="#framem" scale="0.01 0.01 0.01">
-            </a-obj-model>
-        </a-marker>
         
         <a-marker type='barcode' value='3'>
             <a-entity
                 <a-entity obj-model="obj: #gift2; mtl: #gift2m"></a-entity>
             </a-entity>
         </a-marker>
+        
+        <a-marker type='barcode' value='4'>
+            <a-entity
+                <a-entity obj-model="obj: #piggy; mtl: #piggym"></a-entity>
+            </a-entity>
+        </a-marker>
+        
+        <a-marker type='barcode' value='5'>
+            <a-entity
+                <a-entity obj-model="obj: #cassette2; mtl: #cassette2m"></a-entity>
+            </a-entity>
+        </a-marker>
+        
+        <a-marker type='barcode' value='6'>
+            <a-entity
+                <a-entity obj-model="obj: #book; mtl: #bookm"></a-entity>
+            </a-entity>
+        </a-marker>
+        
+        <a-marker type='barcode' value='7'>
+            <a-entity
+                <a-entity obj-model="obj: #frame; mtl: #frame2m"></a-entity>
+            </a-entity>
+        </a-marker>
+        
+        <a-marker type='barcode' value='10'>
+            <a-entity
+                <a-entity obj-model="obj: #gameboy; mtl: #gameboym"></a-entity>
+            </a-entity>
+        </a-marker>
+        
+        <a-marker type='barcode' value='11'>
+            <a-entity
+                <a-entity obj-model="obj: #cd; mtl: #cdm"></a-entity>
+            </a-entity>
+        </a-marker>
+        
   	<a-entity camera></a-entity>
     </a-scene>
   </body>
